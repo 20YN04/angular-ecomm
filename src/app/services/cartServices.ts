@@ -39,4 +39,8 @@ export class Cart {
   addToCart(products: products) {
     this.cart.set([...this.cart(), products]);
   }
+
+  removeFromCart(id: number) {
+    this.cart.set(this.cart().filter((p) => p.id !== id));
+  }
 }
