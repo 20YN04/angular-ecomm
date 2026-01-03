@@ -5,8 +5,8 @@ import { PrimaryButton } from "../primary-button/primary-button";
   selector: 'app-header',
   imports: [PrimaryButton],
   template: `
-    <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
-      <span>My store</span>
+    <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between items-center">
+      <span class="text-xl">My store</span>
       <app-primary-button label="Cart" (btnClicked)="showButtonClicked()"/>
     </div>
 
